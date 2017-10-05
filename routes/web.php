@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('payment', ['as' => 'payment', 'uses' => 'PaymentController@pay']);
